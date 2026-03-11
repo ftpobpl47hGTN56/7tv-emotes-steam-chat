@@ -1,0 +1,420 @@
+/* ============================================================
+   Steam 7TV Emote Picker — content.css  (v5)
+   + collapsible set headers
+   ============================================================ */
+    /* ── webkit-scrollbar ── */
+    .stv-grid {
+        scrollbar-color: auto !important;
+        scrollbar-width: auto !important;
+    }
+    .stv-grid::-webkit-scrollbar {
+        width: 15px !important; 
+        background-color: #c1a5ef00 !important; 
+    } 
+  /* ── webkit-scrollbar ── */
+/* ── Trigger button ─────────────────────────────────────── */
+
+#stv-open7tv-picker-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 34px !important;
+    height: 34px !important;
+    cursor: pointer !important;
+    vertical-align: middle !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    z-index: 10000 !important;
+    padding: 0px !important;
+    margin: 0px 4px !important;
+    background: rgb(10 51 89) !important;      
+    border:  1px  solid !important;
+    color:  rgb(51 237 229) !important;
+    border-radius: 8px !important;
+    transition: background 0.15s, border-color 0.15s !important;
+ }
+  #stv-open7tv-picker-btn:hover {
+      background: rgb(177 130 34 / 59%) !important;
+      border-color: rgb(255 212 100) !important;
+      transition: background 0.35s, border-color 0.35s !important;
+ }
+#stv-open7tv-picker-btn.stv-open7tv-picker-btn-active {
+  background:       rgba(100,210,255,0.18) !important;
+  border-color:     #64d2ff !important;
+}
+#stv-open7tv-picker-btn img {
+  width:   22px !important;
+  height:  22px !important;
+  pointer-events: none !important;
+}
+
+/* ── Picker panel ───────────────────────────────────────── */
+#stv-picker {
+    position: absolute !important;
+    bottom: 100% !important;
+    right: 0px !important;
+    left: auto !important;
+    flex-direction: column !important;
+    width: 680px !important;
+    max-height: 600px !important;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 8px 32px !important;
+    z-index: 99999 !important;
+    margin-bottom: 6px !important;
+    font-family: "Motiva Sans", Arial, sans-serif !important;
+    background: rgb(44 34 57) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    border-image: initial !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    animation: 0.14s ease 0s 1 normal none running stvIn !important;
+}
+@keyframes stvIn {
+  from  { opacity:0; transform: translateY(6px) scale(0.97); }
+  to    { opacity:1; transform: translateY(0)  scale(1);     }
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.stv-header {
+  display:          flex !important;
+  align-items:      center !important;
+  gap:              8px !important;
+  padding:          9px 11px 8px !important;
+  border-bottom:    1px solid rgba(255,255,255,0.08) !important;
+  flex-shrink:      0 !important;
+}
+.stv-title {
+  font-size:        12px !important;
+  font-weight:      700 !important;
+  color:            #64d2ff !important;
+  letter-spacing:   0.5px !important;
+  white-space:      nowrap !important;
+}
+.stv-search {
+    min-width: 0px !important;
+    height: 25px !important;
+    color: rgb(86 183 186) !important;
+    font-size: 14px !important;
+    flex: 1 1 0% !important;
+    background: rgb(33 23 35) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(228 194 69 / 54%) !important;
+    border-image: initial !important;
+    border-radius: 5px !important;
+    padding: 4px 8px !important;
+    outline: none !important;
+    transition: border-color 0.15s !important;
+}
+.stv-search:focus   { border-color: #64d2ff !important; }
+.stv-search::placeholder { color: rgba(198,212,223,0.35) !important; }
+.stv-close {
+  background:       transparent !important;
+  border:           none !important;
+  color:            rgba(198,212,223,0.5) !important;
+  font-size:        14px !important;
+  cursor:           pointer !important;
+  padding:          0 4px !important;
+  flex-shrink:      0 !important;
+  transition:       color 0.15s !important;
+}
+.stv-close:hover { color: #ff6b6b !important; }
+
+/* ── Grid ───────────────────────────────────────────────── */
+/* ──── стили скроллбара stv-grid ──── */
+.stv-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)) !important;
+    gap: 3px !important;
+    padding: 8px !important;
+    overflow-y: scroll !important;   /* scroll — не auto, CEF требует явного значения */
+    flex: 1 !important;
+    /* убираем scrollbar-color и scrollbar-width отсюда полностью */
+}
+.stv-grid::-webkit-scrollbar {
+    width: 24px !important;
+    background: transparent !important;
+}
+.stv-grid::-webkit-scrollbar-track {
+    background: rgba(18, 58, 83, 0.2) !important;
+    border-radius: 10px !important;
+}
+.stv-grid::-webkit-scrollbar-thumb {
+    background-color: #59406e !important;
+    border-radius: 10px !important;
+    border: 2px solid rgb(77, 40, 99) !important;
+    background-clip: padding-box !important;
+}
+.stv-grid::-webkit-scrollbar-thumb:hover {
+        background-color: #714b8c !important;
+        border: 2px solid #9e85ab !important;
+  }
+ /* ──── webkit-scrollbar ──── */
+
+ 
+
+/* ── Set header strip ───────────────────────────────────── */
+.stv-set-header {
+  grid-column:      1 / -1 !important;   /* span full grid width */
+  display:          flex !important;
+  align-items:      center !important;
+  gap:              7px !important;
+  padding:          5px 8px 5px 6px !important;
+  margin:           4px 0 2px !important;
+  background:       rgba(100, 210, 255, 0.07) !important;
+  border:           1px solid rgba(100, 210, 255, 0.18) !important;
+  border-radius:    5px !important;
+  cursor:           pointer !important;
+  user-select:      none !important;
+  transition:       background 0.12s, border-color 0.12s !important;
+}
+.stv-set-header:hover {
+  background:       rgba(100, 210, 255, 0.14) !important;
+  border-color:     rgba(100, 210, 255, 0.35) !important;
+}
+.stv-set-header:first-child {
+  margin-top:       0 !important;
+}
+
+/* Arrow rotates when collapsed */
+.stv-set-arrow {
+  font-size:        11px !important;
+  color:            #64d2ff !important;
+  flex-shrink:      0 !important;
+  transition:       transform 0.15s !important;
+  display:          inline-block !important;
+  line-height:      1 !important;
+}
+.stv-set-collapsed .stv-set-arrow {
+  transform:        rotate(-90deg) !important;
+}
+
+/* Set display name */
+.stv-set-name {
+  font-size:        12px !important;
+  font-weight:      700 !important;
+  color:            #c6d4df !important;
+  flex:             1 !important;
+  white-space:      nowrap !important;
+  overflow:         hidden !important;
+  text-overflow:    ellipsis !important;
+}
+
+/* Set ID — monospace, muted */
+.stv-set-id {
+  font-size:        10px !important;
+  font-family:      "Courier New", monospace !important;
+  color:            rgba(198, 212, 223, 0.35) !important;
+  white-space:      nowrap !important;
+  overflow:         hidden !important;
+  text-overflow:    ellipsis !important;
+  max-width:        160px !important;
+}
+
+/* Emote count badge */
+.stv-set-count {
+  font-size:        11px !important;
+  color:            rgba(100, 210, 255, 0.65) !important;
+  background:       rgba(100, 210, 255, 0.1) !important;
+  border-radius:    3px !important;
+  padding:          1px 5px !important;
+  flex-shrink:      0 !important;
+  white-space:      nowrap !important;
+}
+
+/* ── Emote item ─────────────────────────────────────────── */
+.stv-item {
+  display:          flex !important;
+  flex-direction:   column !important;
+  align-items:      center !important;
+  justify-content:  center !important;
+  gap:              3px !important;
+  padding:          5px 3px !important;
+  border-radius:    5px !important;
+  cursor:           pointer !important;
+  border:           1px solid transparent !important;
+  transition:       background 0.1s, border-color 0.1s !important;
+  min-height:       68px !important;
+  position:         relative !important;
+}
+.stv-item:hover {
+  background:       rgba(255,255,255,0.09) !important;
+  border-color:     rgba(100,210,255,0.3) !important;
+}
+.stv-item:active { transform: scale(0.93) !important; }
+.stv-item img {
+  width:            36px !important;
+  height:           36px !important;
+  object-fit:       contain !important;
+  image-rendering:  -webkit-optimize-contrast !important;
+}
+
+.stv-item:hover::before {
+  content:          "Shift-send as link" !important;
+  position:         absolute !important;
+  bottom:           55px !important;
+  left:             50% !important;
+  transform:        translateX(-50%) !important;
+  font-size:        12px !important;
+  color:            rgb(100, 175, 255) !important;
+  background:       rgba(0,0,0,0.8) !important;
+  padding:          2px 4px !important;
+  border-radius:    2px !important;
+  width:            98px !important;
+  white-space:      wrap !important;
+  z-index:          1000 !important;
+}
+
+.stv-item span {
+  font-size:        11px !important;
+  color:            rgb(243 235 193 / 84%) !important;
+  text-align:       center !important;
+  word-break:       break-all !important;
+  line-height:      1.2 !important;
+  max-width:        100% !important;
+  display:          -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  overflow:         hidden !important;
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+.stv-footer {
+  display:          flex !important;
+  align-items:      center !important;
+  justify-content:  center !important;
+  gap:              10px !important;
+  padding:          7px 12px !important;
+  border-top:       1px solid rgba(255,255,255,0.08) !important;
+  flex-shrink:      0 !important;
+}
+.stv-nav {
+  background:       rgba(255,255,255,0.07) !important;
+  border:           1px solid rgba(255,255,255,0.13) !important;
+  border-radius:    4px !important;
+  color:            #c6d4df !important;
+  cursor:           pointer !important;
+  padding:          3px 10px !important;
+  font-size:        12px !important;
+  transition:       background 0.15s !important;
+}
+.stv-nav:hover { background: rgba(255,255,255,0.14) !important; }
+.stv-page {
+  font-size:        11px !important;
+  color:            rgba(198,212,223,0.55) !important;
+  min-width:        50px !important;
+  text-align:       center !important;
+}
+
+/* ── Inline emotes in messages ──────────────────────────── */
+.stv-emote-inline {
+  height:           54px !important;
+  width:            auto !important;
+  vertical-align:   middle !important;
+  margin:           0 1px !important;
+  object-fit:       contain !important;
+}
+
+/* ── Zero-width overlay wrapper ─────────────────────────── */
+.stv-emote-wrap {
+  display:          inline-block !important;
+  position:         relative !important;
+  vertical-align:   middle !important;
+  width:            54px !important;
+  height:           54px !important;
+  margin:           0 1px !important;
+}
+.stv-emote-wrap .stv-emote-base {
+  display:          block !important;
+  width:            100% !important;
+  height:           100% !important;
+  object-fit:       contain !important;
+  position:         relative !important;
+}
+.stv-emote-wrap .stv-emote-overlay {
+  position:         absolute !important;
+  top:              0 !important;
+  left:             0 !important;
+  width:            100% !important;
+  height:           100% !important;
+  object-fit:       contain !important;
+  pointer-events:   none !important;
+  z-index:          2 !important;
+  margin:           0 !important;
+  transform:        none !important;
+}
+
+/* Zero-width badge in picker grid */
+.stv-item.stv-zw { opacity: 0.75 !important; }
+.stv-item.stv-zw::after {
+  content:          "ZW" !important;
+  position:         absolute !important;
+  top:              3px !important;
+  right:            3px !important;
+  font-size:        12px !important;
+  color:            #64d2ff !important;
+  background:       rgba(0,0,0,0.5) !important;
+  border-radius:    2px !important;
+  padding:          1px 2px !important;
+  line-height:      1 !important;
+}
+
+/* ── Steam textarea overrides ───────────────────────────── */
+.chatentry_chatEntryControls_3Ule3 {
+  background-color: #1b0826 !important;
+  box-shadow:       inset 0px 0px 4px #000 !important;
+  outline:          none !important;
+  color:            #cc8631 !important;
+  border:           1px solid #29b5b2 !important;
+}
+.chatentry_chatEntryControls_3Ule3::-webkit-scrollbar-thumb {
+  background-color: #59406e !important;
+  border-radius:    15px !important;
+}
+.chatentry_chatEntryControls_3Ule3::-webkit-scrollbar-thumb:hover {
+  background-color: #714b8c !important;
+  border:           2px solid #9e85ab !important;
+}
+textarea.chatentry_chatTextarea_113iu.Focusable {
+  background-color: #1f3d5d5e !important;
+  box-shadow:       inset 0px 0px 4px #000 !important;
+  outline:          none !important;
+  color:            #e5d19a !important;
+  border:           1px solid #29b5b2 !important;
+}
+
+
+/* Per-set page navigation */
+    .stv-set-nav {
+      display: flex !important;
+      align-items: center !important;
+      gap: 4px !important;
+      flex-shrink: 0 !important;
+    }
+    .stv-set-nav-btn {
+      background: rgba(100, 210, 255, 0.12) !important;
+      border: 1px solid rgba(100, 210, 255, 0.25) !important;
+      border-radius: 3px !important;
+      color: #64d2ff !important;
+      font-size: 14px !important;
+      padding: 1px 6px !important;
+      cursor: pointer !important;
+      line-height: 1.4 !important;
+      transition: background 0.1s !important;
+      width: 40px;
+      height: 32px;
+    }
+    .stv-set-nav-btn:hover:not(:disabled) {
+      background: rgba(100, 210, 255, 0.25) !important;
+    }
+    .stv-set-nav-btn:disabled {
+      opacity: 0.3 !important;
+      cursor: default !important;
+    }
+    .stv-set-nav-label {
+      font-size: 14px !important;
+      color: rgb(240 217 99 / 83%) !important;
+      min-width: 32px !important;
+      text-align: center !important;
+      white-space: nowrap !important;
+    }

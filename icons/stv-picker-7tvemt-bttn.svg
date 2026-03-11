@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with: Axialis IconVectors - www.axialis.com -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" id="РРєРѕРЅРєР° 1" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="SVGID_1_" x1="0.00%" y1="50.00%" x2="100.00%" y2="50.00%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="0%" stop-color="#410A61"/>
+      <stop offset="100%" stop-color="#0A6157"/>
+    </linearGradient>
+    <linearGradient id="SVGID_2_" x1="32.90%" y1="3.02%" x2="67.10%" y2="96.98%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#08093B"/>
+      <stop offset="100%" stop-color="#4CA4BA"/>
+    </linearGradient>
+  </defs>
+  <path fill="#6E5EA5" stroke="url(#SVGID_1_)" stroke-width="1" stroke-linejoin="round" d="M-.6,-.7L34.5,-.7L34.5,34.2L-.6,34.2z"/>
+  <path fill="url(#SVGID_2_)" stroke="#FFCE55" stroke-width="1" stroke-linejoin="round" d="M1.5,4.12C1.5,2.67,2.67,1.5,4.12,1.5L27.58,1.5C29.19,1.5,30.5,2.81,30.5,4.42L30.5,28.13C30.5,29.49,29.39,30.6,28.03,30.6L4.72,30.6C2.94,30.6,1.5,29.16,1.5,27.38z"/>
+  <path fill="#36BC9B" stroke="#48CFAE" stroke-width="1" stroke-linejoin="round" d="M4.21,6L5.04,4.56L11.43,4.51L17.56,4.62L4.53,16.7L7.06,16.7L19.4,4.89L19.4,3.68L4.68,3.53C3.86,3.52,3.2,4.09,3.2,4.8L3.2,6.55L4.16,6.55C4.26,6.55,4.32,6.48,4.31,6.4z"/>
+  <g>
+    <path fill="#48CFAE" stroke="#48CFAE" stroke-width="1" stroke-linejoin="round" d="M17.13,16.45L14.45,16.45L14.45,28.63L13.37,28.63L13.37,16.45L10.7,16.45L10.7,15L17.13,15z"/>
+    <path fill="#48CFAE" stroke="#48CFAE" stroke-width="1" stroke-linejoin="round" d="M29.4,15L25.97,28.63L24.77,28.63L21.42,15L22.62,15L25.2,25.8C25.28,26.16,25.34,26.56,25.38,27.01L25.4,27.01C25.43,26.63,25.52,26.23,25.62,25.79L28.23,15z"/>
+  </g>
+</svg>
