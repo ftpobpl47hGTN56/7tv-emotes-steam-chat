@@ -2,15 +2,13 @@
 
 > A Chrome extension that brings **7TV emote picker** directly into Steam web chat — with real-time rendering and custom emote set support.
 
+![Version](https://img.shields.io/badge/version-1.0.0-blueviolet?style=flat-square)
+![Manifest](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-Chrome%20%2F%20Chromium-yellow?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+
 [![Download](https://img.shields.io)](https://github.com/ftpobpl47hGTN56/7tv-emotes-steam-chat/releases/download/v1.0.0/steam-7tv-emotes.zip)
 
-![Version](https://img.shields.io/badge/version-1.0.0-blueviolet?style=flat-square)
-
-![Manifest](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)
-
-![Platform](https://img.shields.io/badge/platform-Chrome%20%2F%20Chromium-yellow?style=flat-square)
-
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
 ---
 
