@@ -19,20 +19,7 @@
 - ⚡ **Zero-width emote support** — rendered as overlays, just like on Twitch/Kick
 - 📋 **Clipboard fallback** — if textarea isn't found, emote code is copied to clipboard
 
----
 
-## 📸 Screenshots
->   <img width="996" height="811" alt="image" src="https://github.com/user-attachments/assets/c07acfc1-f154-4178-8cd3-8cc4fc425e8c" />
-
->   <img width="814" height="356" alt="image" src="https://github.com/user-attachments/assets/9cda0917-a14c-4f28-9bc6-c010c1daecc9" />
-
->   <img width="626" height="552" alt="image" src="https://github.com/user-attachments/assets/4cce857e-8ebd-41cf-a1d7-9c07314865b5" />
-
->  <img width="1319" height="860" alt="image" src="https://github.com/user-attachments/assets/75b0305c-0e7b-4597-88a9-9f623d363d27" />
-
->   <img width="900" height="601" alt="image" src="https://github.com/user-attachments/assets/61d740d5-404c-4c4e-983d-6120a9ce2272" />
-
----
 
 ## 🧩 Installation (unpacked / developer mode)
 
@@ -91,6 +78,20 @@ steam-7tv-emotes/
 └── userscript for Steam Desktop - in SPF_UI exe/
     └── friends.custom.js  # Userscript for Steam Desktop app (CEF)
 ```
+
+---
+---
+
+## 📸 Screenshots
+>   <img width="996" height="811" alt="image" src="https://github.com/user-attachments/assets/c07acfc1-f154-4178-8cd3-8cc4fc425e8c" />
+
+>   <img width="814" height="356" alt="image" src="https://github.com/user-attachments/assets/9cda0917-a14c-4f28-9bc6-c010c1daecc9" />
+
+>   <img width="626" height="552" alt="image" src="https://github.com/user-attachments/assets/4cce857e-8ebd-41cf-a1d7-9c07314865b5" />
+
+>  <img width="1319" height="860" alt="image" src="https://github.com/user-attachments/assets/75b0305c-0e7b-4597-88a9-9f623d363d27" />
+
+>   <img width="900" height="601" alt="image" src="https://github.com/user-attachments/assets/61d740d5-404c-4c4e-983d-6120a9ce2272" />
 
 ---
 
