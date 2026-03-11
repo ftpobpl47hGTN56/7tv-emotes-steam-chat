@@ -1,4 +1,4 @@
-# 🟣 7TV Emotes for Steam Chat
+# 🧩 7TV Emotes for Steam Chat
 
 > A Chrome extension that brings **7TV emote picker** directly into Steam web chat — with real-time rendering and custom emote set support.
 
@@ -21,9 +21,9 @@
 ---
 
 ## 📸 Screenshots
-
-> *(Add screenshots here — see instructions below)*
-
+>  https://github.com/ftpobpl47hGTN56/7tv-emotes-steam-chat/blob/main/screenshots/st7t-popup.png
+>  https://github.com/ftpobpl47hGTN56/7tv-emotes-steam-chat/blob/main/screenshots/st7t-chat-emotes.png
+>  https://github.com/ftpobpl47hGTN56/7tv-emotes-steam-chat/blob/main/screenshots/st7t-emotepicker.png 
 ---
 
 ## 🧩 Installation (unpacked / developer mode)
@@ -139,7 +139,7 @@ Pull requests are welcome! If you find a bug or want to suggest a feature:
 
 ---
 
-## 🙏 Credits
+## 📜 Credits
 
 - [7TV](https://7tv.app) — emote platform and API
 - [Steam](https://store.steampowered.com) — chat platform
