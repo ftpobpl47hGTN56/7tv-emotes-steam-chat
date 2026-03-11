@@ -6,8 +6,9 @@
 ![Manifest](https://img.shields.io/badge/Manifest-V3-blue?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Chrome%20%2F%20Chromium-yellow?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
-
-[![Download](https://img.shields.io)](https://github.com/ftpobpl47hGTN56/7tv-emotes-steam-chat/releases/download/v1.0.0/steam-7tv-emotes.zip)
+ 
+[![Download](https://img.shields.io)](https://github.com)
+(https://github.com/ftpobpl47hGTN56/7tv-emotes-steam-chat/releases/download/v1.0.0/steam-7tv-emotes.zip)
 
 
 ---
